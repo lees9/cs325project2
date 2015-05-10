@@ -8,7 +8,7 @@ def changeslow(array, K):
 	if array._contains_(K):
 		C = [0] * len(array) #Initialize an array of 0s the length of the array 
 		C[array.index(K)] = 1 #increase the count of K-cent coin
-		RETURN [C, 1] #return C array and number of coins (1)
+		return [C, 1] #return C array and number of coins (1)
 	else:
 		minimum = None
 		for i in array:
